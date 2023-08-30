@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 62.5%;
+}
+.container{
+    margin: 0 6rem;
+}
+.header{
+    background: #ffffff;
+    box-shadow: 1px 2px 5px #0000006e;
+}
+.nav{
+    display: flex;
+    padding: 2rem 0;
+    justify-content: space-between;
+}
+.items{
+    display: flex;
+    align-items: center;
+}
+.items li{
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 1rem;
+    list-style: none;
+    padding: 8px;
+}
+.items li:hover{
+    background: #707070;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.nav>img{
+    width: 100%;
+    max-width: 120px;
+}
+.bg{
+    background: url('assets/img/Nasa.jpg');
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+main{
+    margin: 0;
+}
+.foguete{
+    max-width: 200px;
+    position: relative;
+    animation: mymove 4s infinite;
+}
+
+  @keyframes mymove {
+    0% {left: 0px;}
+    15%{left: 50px; bottom: -20px;}
+    25%{left: 150px; bottom: -200px;}
+    50%{left: 350px; bottom: -250px;}
+    60%{left: 450px; bottom: -150px;}
+    80%{left: 650px; bottom: -100px;}
+    90%{left: 750px; bottom: -100px;}
+    95%{left: 800px; bottom: -100px;}
+    100% {right: -990px;}
+  }
+  
+  
+@media(max-width: 990px){
+    .container{
+        margin: 0 16px;
+    }
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    font-size: 14px;
+    color: #595959;
+    margin: 8px 0;
+}
+input{
+    width: 300px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    padding: 12px;
+    font-size: 18px;
+}
+button[type=submit]{
+    width: 200px;
+    background: #1baf94;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 12px 40px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 12px;
+}
+#resultado{
+    margin: 20px 0;
+    font-size: 22px;
+    color: #000000;
+}
